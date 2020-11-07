@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1>Bibliothèque</h1>
+	<h3>Bienvenue dans ma bibliothèque</h3>
+	{% if livres %}
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Nom du livre</th>
+				<th>Tome</th>
+				<th>Date de parution</th>
+				<th>ISBN</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+
+		<tbody>
+				{% for livre in livres %}
+			<tr>
+				<th>{{ livre.nom }}</th>
+				<th>{{ livre.tome}}</th>
+				<th>{{ livre.date}}</th>
+				<th>{{ livre.isbn}}</th>
+				<th>
+					<a href="#" class="btn btn-danger">Supprimer</a>
+				</th>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>		
+	{% else %}
+	<p>Pas de livre</p>
+	{% endif %}
+	
+{% endblock %}	
+   

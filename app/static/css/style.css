@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1
+{
+    border: 3px #f25913 solid;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px black;
+    background-color: #fff0cc;
+    color: #f25913;
+	font-size: 2.5em;
+	font-family: 'open_sansregular';
+	font-weight: bold;
+	text-align: center;
+    opacity: 0.8;
+}
+
+h3
+{
+    color: #731801;
+    font-family: 'open_sansregular';
+    font-size: 1.5em;
+}
+
+body
+{
+    background-image: url("images/maple-leaf.png");
+    background-repeat: no-repeat;
+}
