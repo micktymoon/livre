@@ -11,17 +11,17 @@
 
     <body>
 		<div id="bloc_page">
-			<header>
-				<div id="titre principal">
-					<div id="logo">
-						<img src="{{ url_for("static", filename="css/images/logo2.png") }}" alt="logo LOTR" />
-						<h1>Le Seigneur des Anneaux</h1>
-					</div>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img src="{{ url_for("static", filename="css/images/logo2.png") }}" width="50" height="50" alt="Info logo" />
+						Le Seigneur des Anneaux
+					</a>
 					
-					<h2>Bienvenue dans la terre du milieu.</h2>
-				</div>
+					
 				
-				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				
+				
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item">
@@ -32,8 +32,9 @@
 							</li>
 						</ul>
 					</div>
-				</nav>
-			</header>
+				</div>
+			</nav>
+			<h2>Bienvenue dans la terre du milieu.</h2>
 			
 			<div id="banniere_image">
 				<div id="banniere_description">
